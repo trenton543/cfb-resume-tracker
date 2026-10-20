@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CFB Resume Dashboard</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 1.5rem; margin: 0; }
+    .container { max-width: 850px; margin: 0 auto; }
+    h1 { text-align: center; margin-bottom: 0.25rem; font-size: 2rem; }
+    .subtitle { text-align: center; color: #94a3b8; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .legend { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; background: #1e293b; padding: 0.75rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.85rem; }
+    .legend-item { display: flex; align-items: center; gap: 0.3rem; }
+    
+    .team-card {
+      display: flex; align-items: center; justify-content: space-between;
+      background: #1e293b; padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .team-info { display: flex; align-items: center; gap: 0.75rem; }
+    .rank { font-weight: 700; font-size: 1.1rem; width: 28px; color: #38bdf8; text-align: right; }
+    .logo { width: 32px; height: 32px; object-fit: contain; }
+    .team-name { font-weight: 600; font-size: 1rem; }
+    
+    .badges { display: flex; gap: 6px; align-items: center; }
+    .icon { font-size: 1.1rem; cursor: pointer; }
+    
+    .star-gold { color: #ffd700; text-shadow: 0 0 3px rgba(255,215,0,0.5); }
+    .star-silver { color: #c0c0c0; }
+    .star-bronze { color: #cd7f32; }
+    .star-black { color: #475569; }
+    .skull-loss { color: #ef4444; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contenders vs. Pretenders</h1>
+    <p class="subtitle">AP Top 25 Resume Evaluation (Opponent ranks reflect current Top 30)</p>
+
+    <div class="legend">
+      <div class="legend-item"><span class="star-gold">★</span> Top 10 Win</div>
+      <div class="legend-item"><span class="star-silver">★</span> Top 11–20 Win</div>
+      <div class="legend-item"><span class="star-bronze">★</span> Top 21–30 Win</div>
+      <div class="legend-item"><span class="star-black">★</span> Unranked Win</div>
+      <div class="legend-item"><span class="skull-loss">💀</span> Loss</div>
+    </div>
+
+    <div id="dashboard">Loading AP Poll data...</div>
+  </div>
+
+  <script>
+    async function loadDashboard() {
+      try {
+        const response = await fetch('data.json');
+        const teams = await response.json();
+        const container = document.getElementById('dashboard');
+        container.innerHTML = '';
+        
+        teams.slice(0, 25).forEach(team => {
+          const card = document.createElement('div');
+          card.className = 'team-card';
+          
+          let badgeHTML = team.badges.map(b => {
+            if (b.type === 'win') {
+              return `<span class="icon star-${b.tier}" title="Win vs ${b.opp}">★</span>`;
+            } else {
+              return `<span class="icon skull-loss" title="Loss vs ${b.opp}">💀</span>`;
+            }
+          }).join('');
+
+          card.innerHTML = `
+            <div class="team-info">
+              <span class="rank">${team.rank}</span>
+              <img class="logo" src="${team.logo}" alt="${team.name}">
+              <span class="team-name">${team.location} ${team.name}</span>
+            </div>
+            <div class="badges">${badgeHTML}</div>
+          `;
+          container.appendChild(card);
+        });
+      } catch (err) {
+        document.getElementById('dashboard').innerText = 'Data generating... Please refresh in a moment or run the Action script manually.';
+      }
+    }
+    loadDashboard();
+  </script>
+</body>
+</html>
