@@ -2,13 +2,11 @@ import json
 import requests
 
 def clean_team_name(team_data):
-    # Safe deduplication for ESPN team names
     location = team_data.get('location', '').strip()
     nickname = team_data.get('nickname', '').strip()
     display_name = team_data.get('displayName', '').strip()
     short_name = team_data.get('shortDisplayName', '').strip()
     
-    # Preferred order of clean names
     if short_name and short_name != f"{location} {location}":
         return short_name
     elif location and nickname:
@@ -31,7 +29,6 @@ def get_top_30_ap_poll():
         
     teams = []
     if ap_poll:
-        # Top 25
         for rank_info in ap_poll.get('ranks', []):
             team_data = rank_info.get('team', {})
             rank_num = rank_info.get('current', rank_info.get('rank', len(teams) + 1))
@@ -43,7 +40,6 @@ def get_top_30_ap_poll():
                 'logo': team_data.get('logo', '')
             })
             
-        # Extend to Top 30 using "Others Receiving Votes"
         others = ap_poll.get('others', [])
         others_sorted = sorted(others, key=lambda x: x.get('points', 0), reverse=True)
         for team_info in others_sorted[:5]:
@@ -92,6 +88,11 @@ def get_team_badges(team_id, rank_map):
         opp_rank = rank_map.get(opp_id, 99) # 99 if outside top 30
         opp_abbr = opponent.get('team', {}).get('abbreviation', 'OPP')
         
+        # Extract Scores
+        my_score = my_team.get('score', {}).get('displayValue', '')
+        opp_score = opponent.get('score', {}).get('displayValue', '')
+        score_str = f" ({my_score}–{opp_score})" if my_score and opp_score else ""
+        
         # Determine opponent rank tier
         if 1 <= opp_rank <= 10:
             tier = 'gold'
@@ -103,9 +104,9 @@ def get_team_badges(team_id, rank_map):
             tier = 'black'
             
         if is_winner:
-            badges.append({'type': 'win', 'tier': tier, 'opp': opp_abbr})
+            badges.append({'type': 'win', 'tier': tier, 'opp': opp_abbr, 'score': score_str})
         else:
-            badges.append({'type': 'loss', 'tier': tier, 'opp': opp_abbr})
+            badges.append({'type': 'loss', 'tier': tier, 'opp': opp_abbr, 'score': score_str})
             
     return badges
 
