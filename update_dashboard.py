@@ -6,53 +6,78 @@ def get_top_30_ap_poll():
     res = requests.get(url).json()
     
     # Locate AP Poll
-    ap_poll = next(p for p in res['rankings'] if p['type'] == 'ap')
+    rankings_data = res.get('rankings', [])
+    ap_poll = next((p for p in rankings_data if p.get('type') == 'ap'), None)
     
-    teams = []
-    # Top 25
-    for rank_info in ap_poll['ranks']:
-        teams.append({
-            'rank': rank_info['rank'],
-            'team_id': rank_info['team']['id'],
-            'name': rank_info['team']['nickname'],
-            'location': rank_info['team']['location'],
-            'logo': rank_info['team']['logo']
-        })
+    if not ap_poll and rankings_data:
+        ap_poll = rankings_data[0] # Fallback to first available poll
         
-    # Extend to Top 30 using "Others Receiving Votes"
-    if 'others' in ap_poll:
-        others_sorted = sorted(ap_poll['others'], key=lambda x: x.get('points', 0), reverse=True)
-        for i, team_info in enumerate(others_sorted[:5]):
+    teams = []
+    if ap_poll:
+        # Top 25
+        for rank_info in ap_poll.get('ranks', []):
+            team_data = rank_info.get('team', {})
+            # Fix KeyError: get rank from 'current' or 'rank' safely
+            rank_num = rank_info.get('current', rank_info.get('rank', len(teams) + 1))
+            
             teams.append({
-                'rank': 26 + i,
-                'team_id': team_info['team']['id'],
-                'name': team_info['team']['nickname'],
-                'location': team_info['team']['location'],
-                'logo': team_info['team']['logo']
+                'rank': rank_num,
+                'team_id': str(team_data.get('id', '')),
+                'name': team_data.get('nickname', team_data.get('name', '')),
+                'location': team_data.get('location', ''),
+                'logo': team_data.get('logo', '')
+            })
+            
+        # Extend to Top 30 using "Others Receiving Votes"
+        others = ap_poll.get('others', [])
+        others_sorted = sorted(others, key=lambda x: x.get('points', 0), reverse=True)
+        for team_info in others_sorted[:5]:
+            team_data = team_info.get('team', {})
+            teams.append({
+                'rank': len(teams) + 1,
+                'team_id': str(team_data.get('id', '')),
+                'name': team_data.get('nickname', team_data.get('name', '')),
+                'location': team_data.get('location', ''),
+                'logo': team_data.get('logo', '')
             })
             
     return teams
 
 def build_rank_map(teams_list):
-    return {t['team_id']: t['rank'] for t in teams_list}
+    return {t['team_id']: t['rank'] for t in teams_list if t.get('team_id')}
 
 def get_team_badges(team_id, rank_map):
+    if not team_id:
+        return []
+        
     url = f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/{team_id}/schedule"
-    res = requests.get(url).json()
+    try:
+        res = requests.get(url).json()
+    except Exception:
+        return []
     
     badges = []
     for event in res.get('events', []):
-        competition = event['competitions'][0]
-        if not competition.get('status', {}).get('type', {}).get('completed'):
-            continue  # Skip future games
+        competitions = event.get('competitions', [])
+        if not competitions:
+            continue
             
-        competitors = competition['competitors']
-        my_team = next(c for c in competitors if c['team']['id'] == str(team_id))
-        opponent = next(c for c in competitors if c['team']['id'] != str(team_id))
+        competition = competitions[0]
+        # Check if game completed
+        if not competition.get('status', {}).get('type', {}).get('completed'):
+            continue
+            
+        competitors = competition.get('competitors', [])
+        my_team = next((c for c in competitors if str(c.get('team', {}).get('id')) == str(team_id)), None)
+        opponent = next((c for c in competitors if str(c.get('team', {}).get('id')) != str(team_id)), None)
         
+        if not my_team or not opponent:
+            continue
+            
         is_winner = my_team.get('winner', False)
-        opp_id = opponent['team']['id']
+        opp_id = str(opponent.get('team', {}).get('id'))
         opp_rank = rank_map.get(opp_id, 99) # 99 if outside top 30
+        opp_abbr = opponent.get('team', {}).get('abbreviation', 'OPP')
         
         if is_winner:
             if 1 <= opp_rank <= 10:
@@ -63,9 +88,9 @@ def get_team_badges(team_id, rank_map):
                 tier = 'bronze'
             else:
                 tier = 'black'
-            badges.append({'type': 'win', 'tier': tier, 'opp': opponent['team']['abbreviation']})
+            badges.append({'type': 'win', 'tier': tier, 'opp': opp_abbr})
         else:
-            badges.append({'type': 'loss', 'opp': opponent['team']['abbreviation']})
+            badges.append({'type': 'loss', 'opp': opp_abbr})
             
     return badges
 
