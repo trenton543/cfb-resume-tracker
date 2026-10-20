@@ -40,13 +40,11 @@
     
     /* High Contrast Tier Palette */
     .tier-gold { color: #ffd700 !important; filter: drop-shadow(0 0 4px rgba(255,215,0,0.8)); }
-    .tier-silver { color: #38bdf8 !important; filter: drop-shadow(0 0 3px rgba(56,189,248,0.7)); } /* Bright Cyan */
-    .tier-bronze { color: #fb923c !important; filter: drop-shadow(0 0 3px rgba(251,146,60,0.7)); } /* Bright Amber */
+    .tier-silver { color: #38bdf8 !important; filter: drop-shadow(0 0 3px rgba(56,189,248,0.7)); }
+    .tier-bronze { color: #fb923c !important; filter: drop-shadow(0 0 3px rgba(251,146,60,0.7)); }
     
-    /* Stars outside top 30 remain dim slate gray */
     span.tier-black { color: #334155 !important; opacity: 0.6; } 
     
-    /* Losses outside top 30 stand out as a bold, solid dark-black/charcoal X */
     span.loss-black {
       color: #000000 !important;
       font-weight: 900 !important;
@@ -60,7 +58,6 @@
     <h1>Contenders vs. Pretenders</h1>
     <p class="subtitle">AP Top 25 Resume Evaluation (Opponent ranks reflect current Top 30)</p>
 
-    <!-- Conference Filters -->
     <div class="filter-bar" id="filter-bar">
       <button class="filter-btn active" data-conf="all">All Teams</button>
       <button class="filter-btn" data-conf="SEC">SEC</button>
@@ -105,17 +102,19 @@
       const top25 = allTeamsData.slice(0, 25);
       const filteredTeams = top25.filter(team => {
         if (filterConf === 'all') return true;
-        const nameLower = (team.name || '').toLowerCase();
         
-        if (filterConf === 'SEC') return ['georgia', 'alabama', 'ole miss', 'texas', 'tennessee', 'lsu', 'missouri', 'texas a&m', 'oklahoma', 'vanderbilt', 'florida', 'arkansas', 'kentucky', 'south carolina', 'auburn', 'mississippi state'].some(t => nameLower.includes(t));
-        if (filterConf === 'Big Ten') return ['ohio state', 'oregon', 'penn state', 'indiana', 'illinois', 'michigan', 'usc', 'iowa', 'wisconsin', 'nebraska', 'washington', 'minnesota', 'msu', 'purdue', 'northwestern', 'rutgers', 'ucla', 'maryland'].some(t => nameLower.includes(t));
-        if (filterConf === 'Big 12') return ['byu', 'iowa state', 'kansas state', 'colorado', 'texas tech', 'utah', 'arizona state', 'west virginia', 'tcu', 'ucf', 'baylor', 'oklahoma state', 'kansas', 'arizona', 'cincinnati', 'houston'].some(t => nameLower.includes(t));
-        if (filterConf === 'ACC') return ['miami', 'clemson', 'smu', 'pittsburgh', 'louisville', 'virginia tech', 'duke', 'syracuse', 'georgia tech', 'nc state', 'cal', 'stanford', 'boston college', 'wake forest', 'virginia', 'fsu', 'unc'].some(t => nameLower.includes(t));
-        
-        if (filterConf === 'Other') {
-          const isPower4 = ['georgia','alabama','ole miss','texas','tennessee','lsu','missouri','texas a&m','oklahoma','vanderbilt','florida','arkansas','kentucky','south carolina','auburn','mississippi state','ohio state','oregon','penn state','indiana','illinois','michigan','usc','iowa','wisconsin','nebraska','washington','minnesota','msu','purdue','northwestern','rutgers','ucla','maryland','byu','iowa state','kansas state','colorado','texas tech','utah','arizona state','west virginia','tcu','ucf','baylor','oklahoma state','kansas','arizona','cincinnati','houston','miami','clemson','smu','pittsburgh','louisville','virginia tech','duke','syracuse','georgia tech','nc state','cal','stanford','boston college','wake forest','virginia','fsu','unc'].some(t => nameLower.includes(t));
-          return !isPower4;
+        // Exact conference matching from ESPN API data
+        if (team.conference) {
+          if (filterConf === 'Other') {
+            return !['SEC', 'Big Ten', 'Big 12', 'ACC'].includes(team.conference);
+          }
+          return team.conference === filterConf;
         }
+
+        // Backup fallback matching
+        const nameLower = (team.name || '').toLowerCase();
+        if (filterConf === 'Big 12') return nameLower.includes('texas tech') || nameLower.includes('byu');
+        if (filterConf === 'SEC') return nameLower === 'texas' || nameLower.includes('longhorns') || nameLower.includes('georgia') || nameLower.includes('alabama');
         return true;
       });
 
@@ -132,8 +131,6 @@
           const symbol = b.type === 'win' ? '★' : '✕';
           const label = b.type === 'win' ? 'Win' : 'Loss';
           const scoreStr = b.score || '';
-          
-          // Use heavy black outline for unranked losses
           const tierClass = (b.type === 'loss' && b.tier === 'black') ? 'loss-black' : `tier-${b.tier}`;
           
           return `<span class="icon ${tierClass}" title="${label} vs ${b.opp}${scoreStr}">${symbol}</span>`;
