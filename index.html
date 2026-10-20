@@ -38,11 +38,21 @@
     .badges { display: flex; gap: 8px; align-items: center; }
     .icon { font-size: 1.25rem; cursor: pointer; display: inline-block; font-weight: 700; line-height: 1; font-style: normal; }
     
-    /* High Contrast Tier Palette for Dark Mode */
+    /* High Contrast Tier Palette */
     .tier-gold { color: #ffd700 !important; filter: drop-shadow(0 0 4px rgba(255,215,0,0.8)); }
-    .tier-silver { color: #38bdf8 !important; filter: drop-shadow(0 0 3px rgba(56,189,248,0.7)); } /* Bright Sky Blue for Top 11-20 */
-    .tier-bronze { color: #fb923c !important; filter: drop-shadow(0 0 3px rgba(251,146,60,0.7)); } /* Bright Amber Orange for Top 21-30 */
-    .tier-black { color: #334155 !important; opacity: 0.6; } /* Dark Slate for Outside Top 30 */
+    .tier-silver { color: #38bdf8 !important; filter: drop-shadow(0 0 3px rgba(56,189,248,0.7)); } /* Bright Cyan */
+    .tier-bronze { color: #fb923c !important; filter: drop-shadow(0 0 3px rgba(251,146,60,0.7)); } /* Bright Amber */
+    
+    /* Stars outside top 30 remain dim slate gray */
+    span.tier-black { color: #334155 !important; opacity: 0.6; } 
+    
+    /* Losses outside top 30 stand out as a bold, solid dark-black/charcoal X */
+    span.loss-black {
+      color: #000000 !important;
+      font-weight: 900 !important;
+      text-shadow: -1px -1px 0 #475569, 1px -1px 0 #475569, -1px 1px 0 #475569, 1px 1px 0 #475569;
+      opacity: 1.0 !important;
+    }
   </style>
 </head>
 <body>
@@ -66,7 +76,7 @@
         <div class="legend-item"><span class="icon tier-gold">★</span> / <span class="icon tier-gold">✕</span> Top 10 (Gold)</div>
         <div class="legend-item"><span class="icon tier-silver">★</span> / <span class="icon tier-silver">✕</span> Top 11–20 (Cyan)</div>
         <div class="legend-item"><span class="icon tier-bronze">★</span> / <span class="icon tier-bronze">✕</span> Top 21–30 (Bronze)</div>
-        <div class="legend-item"><span class="icon tier-black">★</span> / <span class="icon tier-black">✕</span> Outside Top 30</div>
+        <div class="legend-item"><span class="icon tier-black">★</span> / <span class="icon loss-black">✕</span> Outside Top 30</div>
       </div>
     </div>
 
@@ -76,7 +86,6 @@
   <script>
     let allTeamsData = [];
 
-    // Deduplicate repeated words
     function removeDuplicateWords(str) {
       if (!str) return '';
       const words = str.split(' ');
@@ -98,13 +107,11 @@
         if (filterConf === 'all') return true;
         const nameLower = (team.name || '').toLowerCase();
         
-        // Match conferences
         if (filterConf === 'SEC') return ['georgia', 'alabama', 'ole miss', 'texas', 'tennessee', 'lsu', 'missouri', 'texas a&m', 'oklahoma', 'vanderbilt', 'florida', 'arkansas', 'kentucky', 'south carolina', 'auburn', 'mississippi state'].some(t => nameLower.includes(t));
         if (filterConf === 'Big Ten') return ['ohio state', 'oregon', 'penn state', 'indiana', 'illinois', 'michigan', 'usc', 'iowa', 'wisconsin', 'nebraska', 'washington', 'minnesota', 'msu', 'purdue', 'northwestern', 'rutgers', 'ucla', 'maryland'].some(t => nameLower.includes(t));
         if (filterConf === 'Big 12') return ['byu', 'iowa state', 'kansas state', 'colorado', 'texas tech', 'utah', 'arizona state', 'west virginia', 'tcu', 'ucf', 'baylor', 'oklahoma state', 'kansas', 'arizona', 'cincinnati', 'houston'].some(t => nameLower.includes(t));
         if (filterConf === 'ACC') return ['miami', 'clemson', 'smu', 'pittsburgh', 'louisville', 'virginia tech', 'duke', 'syracuse', 'georgia tech', 'nc state', 'cal', 'stanford', 'boston college', 'wake forest', 'virginia', 'fsu', 'unc'].some(t => nameLower.includes(t));
         
-        // Other / Independent
         if (filterConf === 'Other') {
           const isPower4 = ['georgia','alabama','ole miss','texas','tennessee','lsu','missouri','texas a&m','oklahoma','vanderbilt','florida','arkansas','kentucky','south carolina','auburn','mississippi state','ohio state','oregon','penn state','indiana','illinois','michigan','usc','iowa','wisconsin','nebraska','washington','minnesota','msu','purdue','northwestern','rutgers','ucla','maryland','byu','iowa state','kansas state','colorado','texas tech','utah','arizona state','west virginia','tcu','ucf','baylor','oklahoma state','kansas','arizona','cincinnati','houston','miami','clemson','smu','pittsburgh','louisville','virginia tech','duke','syracuse','georgia tech','nc state','cal','stanford','boston college','wake forest','virginia','fsu','unc'].some(t => nameLower.includes(t));
           return !isPower4;
@@ -124,7 +131,12 @@
         let badgeHTML = team.badges.map(b => {
           const symbol = b.type === 'win' ? '★' : '✕';
           const label = b.type === 'win' ? 'Win' : 'Loss';
-          return `<span class="icon tier-${b.tier}" title="${label} vs ${b.opp}">${symbol}</span>`;
+          const scoreStr = b.score || '';
+          
+          // Use heavy black outline for unranked losses
+          const tierClass = (b.type === 'loss' && b.tier === 'black') ? 'loss-black' : `tier-${b.tier}`;
+          
+          return `<span class="icon ${tierClass}" title="${label} vs ${b.opp}${scoreStr}">${symbol}</span>`;
         }).join('');
 
         const rawName = team.name || `${team.location || ''} ${team.nickname || ''}`.trim();
@@ -142,7 +154,6 @@
       });
     }
 
-    // Filter Button Click Handlers
     document.getElementById('filter-bar').addEventListener('click', (e) => {
       if (e.target.classList.contains('filter-btn')) {
         document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
