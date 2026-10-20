@@ -9,7 +9,10 @@
     .container { max-width: 850px; margin: 0 auto; }
     h1 { text-align: center; margin-bottom: 0.25rem; font-size: 2rem; }
     .subtitle { text-align: center; color: #94a3b8; margin-bottom: 1.5rem; font-size: 0.95rem; }
-    .legend { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; background: #1e293b; padding: 0.75rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.85rem; }
+    
+    .legend { display: flex; flex-direction: column; gap: 0.5rem; background: #1e293b; padding: 0.85rem; border-radius: 8px; margin-bottom: 1.5rem; font-size: 0.85rem; }
+    .legend-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .legend-title { font-weight: bold; color: #94a3b8; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; text-align: center; }
     .legend-item { display: flex; align-items: center; gap: 0.3rem; }
     
     .team-card {
@@ -23,13 +26,13 @@
     .team-name { font-weight: 600; font-size: 1rem; }
     
     .badges { display: flex; gap: 6px; align-items: center; }
-    .icon { font-size: 1.1rem; cursor: pointer; }
+    .icon { font-size: 1.1rem; cursor: pointer; display: inline-block; font-style: normal; }
     
-    .star-gold { color: #ffd700; text-shadow: 0 0 3px rgba(255,215,0,0.5); }
-    .star-silver { color: #c0c0c0; }
-    .star-bronze { color: #cd7f32; }
-    .star-black { color: #475569; }
-    .skull-loss { color: #ef4444; }
+    /* Tier Icon Colors */
+    .tier-gold { color: #ffd700 !important; text-shadow: 0 0 4px rgba(255,215,0,0.6); }
+    .tier-silver { color: #e2e8f0 !important; text-shadow: 0 0 3px rgba(226,232,240,0.5); }
+    .tier-bronze { color: #cd7f32 !important; text-shadow: 0 0 3px rgba(205,127,50,0.5); }
+    .tier-black { color: #475569 !important; }
   </style>
 </head>
 <body>
@@ -38,11 +41,13 @@
     <p class="subtitle">AP Top 25 Resume Evaluation (Opponent ranks reflect current Top 30)</p>
 
     <div class="legend">
-      <div class="legend-item"><span class="star-gold">★</span> Top 10 Win</div>
-      <div class="legend-item"><span class="star-silver">★</span> Top 11–20 Win</div>
-      <div class="legend-item"><span class="star-bronze">★</span> Top 21–30 Win</div>
-      <div class="legend-item"><span class="star-black">★</span> Unranked Win</div>
-      <div class="legend-item"><span class="skull-loss">💀</span> Loss</div>
+      <div class="legend-title">Wins (★) & Losses (💀) by Opponent Rank</div>
+      <div class="legend-row">
+        <div class="legend-item"><span class="icon tier-gold">★</span> / <span class="icon tier-gold">💀</span> Top 10</div>
+        <div class="legend-item"><span class="icon tier-silver">★</span> / <span class="icon tier-silver">💀</span> Top 11–20</div>
+        <div class="legend-item"><span class="icon tier-bronze">★</span> / <span class="icon tier-bronze">💀</span> Top 21–30</div>
+        <div class="legend-item"><span class="icon tier-black">★</span> / <span class="icon tier-black">💀</span> Outside Top 30</div>
+      </div>
     </div>
 
     <div id="dashboard">Loading AP Poll data...</div>
@@ -61,25 +66,23 @@
           card.className = 'team-card';
           
           let badgeHTML = team.badges.map(b => {
-            if (b.type === 'win') {
-              return `<span class="icon star-${b.tier}" title="Win vs ${b.opp}">★</span>`;
-            } else {
-              return `<span class="icon skull-loss" title="Loss vs ${b.opp}">💀</span>`;
-            }
+            const symbol = b.type === 'win' ? '★' : '💀';
+            const label = b.type === 'win' ? 'Win' : 'Loss';
+            return `<span class="icon tier-${b.tier}" title="${label} vs ${b.opp}">${symbol}</span>`;
           }).join('');
 
           card.innerHTML = `
             <div class="team-info">
               <span class="rank">${team.rank}</span>
               <img class="logo" src="${team.logo}" alt="${team.name}">
-              <span class="team-name">${team.location} ${team.name}</span>
+              <span class="team-name">${team.name}</span>
             </div>
             <div class="badges">${badgeHTML}</div>
           `;
           container.appendChild(card);
         });
       } catch (err) {
-        document.getElementById('dashboard').innerText = 'Data generating... Please refresh in a moment or run the Action script manually.';
+        document.getElementById('dashboard').innerText = 'Loading data... If this takes more than a moment, re-run the Action workflow.';
       }
     }
     loadDashboard();
