@@ -2,8 +2,7 @@
   {
     "rank": 1,
     "team_id": "2390",
-    "name": "Miami",
-    "location": "Miami",
+    "name": "Miami Miami",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
     "badges": [
       {
@@ -41,8 +40,7 @@
   {
     "rank": 2,
     "team_id": "252",
-    "name": "BYU",
-    "location": "BYU",
+    "name": "BYU BYU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
     "badges": [
       {
@@ -80,8 +78,7 @@
   {
     "rank": 3,
     "team_id": "194",
-    "name": "Ohio State",
-    "location": "Ohio State",
+    "name": "Ohio State Ohio State",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
     "badges": [
       {
@@ -91,6 +88,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "TEX"
       },
       {
@@ -123,8 +121,7 @@
   {
     "rank": 4,
     "team_id": "87",
-    "name": "Notre Dame",
-    "location": "Notre Dame",
+    "name": "Notre Dame Notre Dame",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
     "badges": [
       {
@@ -159,6 +156,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "BYU"
       }
     ]
@@ -166,8 +164,7 @@
   {
     "rank": 5,
     "team_id": "61",
-    "name": "Georgia",
-    "location": "Georgia",
+    "name": "Georgia Georgia",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
     "badges": [
       {
@@ -202,6 +199,7 @@
       },
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "AUB"
       }
     ]
@@ -209,8 +207,7 @@
   {
     "rank": 6,
     "team_id": "84",
-    "name": "Indiana",
-    "location": "Indiana",
+    "name": "Indiana Indiana",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
     "badges": [
       {
@@ -245,6 +242,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "OSU"
       }
     ]
@@ -252,8 +250,7 @@
   {
     "rank": 7,
     "team_id": "145",
-    "name": "Ole Miss",
-    "location": "Ole Miss",
+    "name": "Ole Miss Ole Miss",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
     "badges": [
       {
@@ -273,6 +270,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "FLA"
       },
       {
@@ -290,8 +288,7 @@
   {
     "rank": 8,
     "team_id": "2641",
-    "name": "Texas Tech",
-    "location": "Texas Tech",
+    "name": "Texas Tech Texas Tech",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
     "badges": [
       {
@@ -329,8 +326,7 @@
   {
     "rank": 9,
     "team_id": "26",
-    "name": "UCLA",
-    "location": "UCLA",
+    "name": "UCLA UCLA",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
     "badges": [
       {
@@ -368,8 +364,7 @@
   {
     "rank": 10,
     "team_id": "254",
-    "name": "Utah",
-    "location": "Utah",
+    "name": "Utah Utah",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
     "badges": [
       {
@@ -407,8 +402,7 @@
   {
     "rank": 11,
     "team_id": "2633",
-    "name": "Tennessee",
-    "location": "Tennessee",
+    "name": "Tennessee Tennessee",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
     "badges": [
       {
@@ -428,6 +422,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "TEX"
       },
       {
@@ -450,8 +445,7 @@
   {
     "rank": 12,
     "team_id": "96",
-    "name": "Kentucky",
-    "location": "Kentucky",
+    "name": "Kentucky Kentucky",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
     "badges": [
       {
@@ -461,6 +455,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "ALA"
       },
       {
@@ -493,8 +488,7 @@
   {
     "rank": 13,
     "team_id": "333",
-    "name": "Alabama",
-    "location": "Alabama",
+    "name": "Alabama Alabama",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
     "badges": [
       {
@@ -524,10 +518,12 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "UGA"
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "TENN"
       }
     ]
@@ -535,8 +531,7 @@
   {
     "rank": 14,
     "team_id": "248",
-    "name": "Houston",
-    "location": "Houston",
+    "name": "Houston Houston",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
     "badges": [
       {
@@ -551,6 +546,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "TTU"
       },
       {
@@ -578,8 +574,7 @@
   {
     "rank": 15,
     "team_id": "2294",
-    "name": "Iowa",
-    "location": "Iowa",
+    "name": "Iowa Iowa",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
     "badges": [
       {
@@ -604,6 +599,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "OSU"
       },
       {
@@ -616,8 +612,7 @@
   {
     "rank": 16,
     "team_id": "30",
-    "name": "USC",
-    "location": "USC",
+    "name": "USC USC",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
     "badges": [
       {
@@ -642,6 +637,7 @@
       },
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "ORE"
       },
       {
@@ -659,8 +655,7 @@
   {
     "rank": 17,
     "team_id": "154",
-    "name": "Wake Forest",
-    "location": "Wake Forest",
+    "name": "Wake Forest Wake Forest",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
     "badges": [
       {
@@ -675,6 +670,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "MIA"
       },
       {
@@ -702,8 +698,7 @@
   {
     "rank": 18,
     "team_id": "99",
-    "name": "LSU",
-    "location": "LSU",
+    "name": "LSU LSU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
     "badges": [
       {
@@ -718,6 +713,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "MISS"
       },
       {
@@ -732,6 +728,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "UK"
       },
       {
@@ -744,8 +741,7 @@
   {
     "rank": 19,
     "team_id": "251",
-    "name": "Texas",
-    "location": "Texas",
+    "name": "Texas Texas",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
     "badges": [
       {
@@ -770,10 +766,12 @@
       },
       {
         "type": "loss",
+        "tier": "black",
         "opp": "OU"
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "FLA"
       }
     ]
@@ -781,8 +779,7 @@
   {
     "rank": 20,
     "team_id": "57",
-    "name": "Florida",
-    "location": "Florida",
+    "name": "Florida Florida",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
     "badges": [
       {
@@ -807,10 +804,12 @@
       },
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "MIZ"
       },
       {
         "type": "loss",
+        "tier": "black",
         "opp": "SC"
       },
       {
@@ -823,12 +822,12 @@
   {
     "rank": 21,
     "team_id": "68",
-    "name": "Boise St",
-    "location": "Boise State",
+    "name": "Boise State Boise St",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
     "badges": [
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "ORE"
       },
       {
@@ -861,8 +860,7 @@
   {
     "rank": 22,
     "team_id": "142",
-    "name": "Missouri",
-    "location": "Missouri",
+    "name": "Missouri Missouri",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
     "badges": [
       {
@@ -882,6 +880,7 @@
       },
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "MSST"
       },
       {
@@ -896,6 +895,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "MISS"
       }
     ]
@@ -903,8 +903,7 @@
   {
     "rank": 23,
     "team_id": "2567",
-    "name": "SMU",
-    "location": "SMU",
+    "name": "SMU SMU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
     "badges": [
       {
@@ -919,6 +918,7 @@
       },
       {
         "type": "loss",
+        "tier": "black",
         "opp": "LOU"
       },
       {
@@ -941,8 +941,7 @@
   {
     "rank": 24,
     "team_id": "77",
-    "name": "Northwestern",
-    "location": "Northwestern",
+    "name": "Northwestern Northwestern",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
     "badges": [
       {
@@ -957,6 +956,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "IU"
       },
       {
@@ -979,8 +979,7 @@
   {
     "rank": 25,
     "team_id": "12",
-    "name": "Arizona",
-    "location": "Arizona",
+    "name": "Arizona Arizona",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
     "badges": [
       {
@@ -990,6 +989,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "BYU"
       },
       {
@@ -1017,12 +1017,12 @@
   {
     "rank": 26,
     "team_id": "197",
-    "name": "Oklahoma St",
-    "location": "Oklahoma State",
+    "name": "Oklahoma State Oklahoma St",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
     "badges": [
       {
         "type": "loss",
+        "tier": "black",
         "opp": "TLSA"
       },
       {
@@ -1047,6 +1047,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "HOU"
       }
     ]
@@ -1054,8 +1055,7 @@
   {
     "rank": 27,
     "team_id": "2483",
-    "name": "Oregon",
-    "location": "Oregon",
+    "name": "Oregon Oregon",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
     "badges": [
       {
@@ -1065,6 +1065,7 @@
       },
       {
         "type": "loss",
+        "tier": "bronze",
         "opp": "OKST"
       },
       {
@@ -1079,6 +1080,7 @@
       },
       {
         "type": "loss",
+        "tier": "gold",
         "opp": "UCLA"
       },
       {
@@ -1091,8 +1093,7 @@
   {
     "rank": 28,
     "team_id": "2",
-    "name": "Auburn",
-    "location": "Auburn",
+    "name": "Auburn Auburn",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
     "badges": [
       {
@@ -1107,6 +1108,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "FLA"
       },
       {
@@ -1116,6 +1118,7 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "TENN"
       },
       {
@@ -1128,8 +1131,7 @@
   {
     "rank": 29,
     "team_id": "256",
-    "name": "James Madison",
-    "location": "James Madison",
+    "name": "James Madison James Madison",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
     "badges": [
       {
@@ -1172,8 +1174,7 @@
   {
     "rank": 30,
     "team_id": "344",
-    "name": "Mississippi St",
-    "location": "Mississippi State",
+    "name": "Mississippi State Mississippi St",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
     "badges": [
       {
@@ -1198,10 +1199,12 @@
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "ALA"
       },
       {
         "type": "loss",
+        "tier": "silver",
         "opp": "LSU"
       }
     ]
