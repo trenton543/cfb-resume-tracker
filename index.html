@@ -36,7 +36,22 @@
     .team-name { font-weight: 600; font-size: 1rem; }
     
     .badges { display: flex; gap: 8px; align-items: center; }
-    .icon { font-size: 1.25rem; cursor: pointer; display: inline-block; font-weight: 700; line-height: 1; font-style: normal; }
+    .icon-wrapper { position: relative; display: inline-block; }
+    .icon { font-size: 1.25rem; cursor: pointer; display: inline-block; font-weight: 700; line-height: 1; font-style: normal; -webkit-tap-highlight-color: transparent; }
+    
+    /* Mobile/Desktop Tooltip Popup */
+    .mobile-tooltip {
+      visibility: hidden; opacity: 0; position: absolute; bottom: 135%; left: 50%;
+      transform: translateX(-50%); background: #0284c7; color: #ffffff; text-align: center;
+      padding: 4px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: 600;
+      white-space: nowrap; z-index: 10; box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: opacity 0.2s ease, visibility 0.2s ease; pointer-events: none;
+    }
+    .mobile-tooltip::after {
+      content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px;
+      border-width: 5px; border-style: solid; border-color: #0284c7 transparent transparent transparent;
+    }
+    .icon-wrapper.active .mobile-tooltip { visibility: visible; opacity: 1; }
     
     /* High Contrast Tier Palette */
     .tier-gold { color: #ffd700 !important; filter: drop-shadow(0 0 4px rgba(255,215,0,0.8)); }
@@ -83,7 +98,6 @@
   <script>
     let allTeamsData = [];
 
-    // Explicit Conference Mapping Arrays
     const secTeams = ['georgia', 'alabama', 'ole miss', 'texas longhorns', 'tennessee', 'lsu', 'missouri', 'texas a&m', 'oklahoma', 'vanderbilt', 'florida', 'arkansas', 'kentucky', 'south carolina', 'auburn', 'mississippi state'];
     const bigTenTeams = ['ohio state', 'oregon', 'penn state', 'indiana', 'illinois', 'michigan', 'usc', 'iowa', 'wisconsin', 'nebraska', 'washington', 'minnesota', 'michigan state', 'purdue', 'northwestern', 'rutgers', 'ucla', 'maryland'];
     const big12Teams = ['byu', 'iowa state', 'kansas state', 'colorado', 'texas tech', 'utah', 'arizona state', 'west virginia', 'tcu', 'ucf', 'baylor', 'oklahoma state', 'kansas', 'arizona', 'cincinnati', 'houston'];
@@ -104,7 +118,6 @@
     function matchesConference(teamName, confList) {
       const name = teamName.toLowerCase().trim();
       return confList.some(item => {
-        // Strict boundary check so "texas" doesn't match "texas tech"
         if (item === 'texas longhorns' || item === 'texas') {
           return name === 'texas' || name === 'texas longhorns';
         }
@@ -150,8 +163,14 @@
           const label = b.type === 'win' ? 'Win' : 'Loss';
           const scoreStr = b.score || '';
           const tierClass = (b.type === 'loss' && b.tier === 'black') ? 'loss-black' : `tier-${b.tier}`;
+          const tipText = `${label} vs ${b.opp}${scoreStr}`;
           
-          return `<span class="icon ${tierClass}" title="${label} vs ${b.opp}${scoreStr}">${symbol}</span>`;
+          return `
+            <div class="icon-wrapper">
+              <span class="icon ${tierClass}" title="${tipText}">${symbol}</span>
+              <div class="mobile-tooltip">${tipText}</div>
+            </div>
+          `;
         }).join('');
 
         const rawName = team.name || `${team.location || ''} ${team.nickname || ''}`.trim();
@@ -168,6 +187,20 @@
         container.appendChild(card);
       });
     }
+
+    // Toggle Tooltip on Tap/Click
+    document.getElementById('dashboard').addEventListener('click', (e) => {
+      const wrapper = e.target.closest('.icon-wrapper');
+      
+      // Dismiss all open tooltips first
+      document.querySelectorAll('.icon-wrapper.active').forEach(el => {
+        if (el !== wrapper) el.classList.remove('active');
+      });
+
+      if (wrapper) {
+        wrapper.classList.toggle('active');
+      }
+    });
 
     document.getElementById('filter-bar').addEventListener('click', (e) => {
       if (e.target.classList.contains('filter-btn')) {
