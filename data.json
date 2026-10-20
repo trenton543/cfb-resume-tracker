@@ -1,0 +1,1209 @@
+[
+  {
+    "rank": 1,
+    "team_id": "2390",
+    "name": "Miami",
+    "location": "Miami",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "STAN"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FAMU"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "WAKE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CMU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CLEM"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FSU"
+      }
+    ]
+  },
+  {
+    "rank": 2,
+    "team_id": "252",
+    "name": "BYU",
+    "location": "BYU",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UTU"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "ARIZ"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TCU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ISU"
+      },
+      {
+        "type": "win",
+        "tier": "gold",
+        "opp": "ND"
+      }
+    ]
+  },
+  {
+    "rank": 3,
+    "team_id": "194",
+    "name": "Ohio State",
+    "location": "Ohio State",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "BALL"
+      },
+      {
+        "type": "loss",
+        "opp": "TEX"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "KENT"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ILL"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "IOWA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MD"
+      },
+      {
+        "type": "win",
+        "tier": "gold",
+        "opp": "IU"
+      }
+    ]
+  },
+  {
+    "rank": 4,
+    "team_id": "87",
+    "name": "Notre Dame",
+    "location": "Notre Dame",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WIS"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "RICE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PUR"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UNC"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "STAN"
+      },
+      {
+        "type": "loss",
+        "opp": "BYU"
+      }
+    ]
+  },
+  {
+    "rank": 5,
+    "team_id": "61",
+    "name": "Georgia",
+    "location": "Georgia",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TNST"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WKU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ARK"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "OU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "VAN"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "ALA"
+      },
+      {
+        "type": "loss",
+        "opp": "AUB"
+      }
+    ]
+  },
+  {
+    "rank": 6,
+    "team_id": "84",
+    "name": "Indiana",
+    "location": "Indiana",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UNT"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "HOW"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WKU"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "NU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "RUTG"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NEB"
+      },
+      {
+        "type": "loss",
+        "opp": "OSU"
+      }
+    ]
+  },
+  {
+    "rank": 7,
+    "team_id": "145",
+    "name": "Ole Miss",
+    "location": "Ole Miss",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "LOU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CLT"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "LSU"
+      },
+      {
+        "type": "loss",
+        "opp": "FLA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "VAN"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "MIZ"
+      }
+    ]
+  },
+  {
+    "rank": 8,
+    "team_id": "2641",
+    "name": "Texas Tech",
+    "location": "Texas Tech",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ACU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ORST"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "HOU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SHSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "COLO"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ASU"
+      }
+    ]
+  },
+  {
+    "rank": 9,
+    "team_id": "26",
+    "name": "UCLA",
+    "location": "UCLA",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CAL"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SDSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PUR"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MD"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "ORE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WIS"
+      }
+    ]
+  },
+  {
+    "rank": 10,
+    "team_id": "254",
+    "name": "Utah",
+    "location": "Utah",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "IDHO"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ARK"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "USU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ISU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "KU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "COLO"
+      }
+    ]
+  },
+  {
+    "rank": 11,
+    "team_id": "2633",
+    "name": "Tennessee",
+    "location": "Tennessee",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FUR"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "GT"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "KENN"
+      },
+      {
+        "type": "loss",
+        "opp": "TEX"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "AUB"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ARK"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "ALA"
+      }
+    ]
+  },
+  {
+    "rank": 12,
+    "team_id": "96",
+    "name": "Kentucky",
+    "location": "Kentucky",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "YSU"
+      },
+      {
+        "type": "loss",
+        "opp": "ALA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TA&M"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "USA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SC"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "LSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "OU"
+      }
+    ]
+  },
+  {
+    "rank": 13,
+    "team_id": "333",
+    "name": "Alabama",
+    "location": "Alabama",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ECU"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "UK"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SC"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "MSST"
+      },
+      {
+        "type": "loss",
+        "opp": "UGA"
+      },
+      {
+        "type": "loss",
+        "opp": "TENN"
+      }
+    ]
+  },
+  {
+    "rank": 14,
+    "team_id": "248",
+    "name": "Houston",
+    "location": "Houston",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ORST"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SOU"
+      },
+      {
+        "type": "loss",
+        "opp": "TTU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "GASO"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UCF"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "KSU"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "OKST"
+      }
+    ]
+  },
+  {
+    "rank": 15,
+    "team_id": "2294",
+    "name": "Iowa",
+    "location": "Iowa",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NIU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ISU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UNI"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MICH"
+      },
+      {
+        "type": "loss",
+        "opp": "OSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WASH"
+      }
+    ]
+  },
+  {
+    "rank": 16,
+    "team_id": "30",
+    "name": "USC",
+    "location": "USC",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SJSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FRES"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UL"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "RUTG"
+      },
+      {
+        "type": "loss",
+        "opp": "ORE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WASH"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PSU"
+      }
+    ]
+  },
+  {
+    "rank": 17,
+    "team_id": "154",
+    "name": "Wake Forest",
+    "location": "Wake Forest",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "AKR"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PUR"
+      },
+      {
+        "type": "loss",
+        "opp": "MIA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "LOU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "STAN"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NCSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CAL"
+      }
+    ]
+  },
+  {
+    "rank": 18,
+    "team_id": "99",
+    "name": "LSU",
+    "location": "LSU",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CLEM"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "LT"
+      },
+      {
+        "type": "loss",
+        "opp": "MISS"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TA&M"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MCN"
+      },
+      {
+        "type": "loss",
+        "opp": "UK"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "MSST"
+      }
+    ]
+  },
+  {
+    "rank": 19,
+    "team_id": "251",
+    "name": "Texas",
+    "location": "Texas",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TXST"
+      },
+      {
+        "type": "win",
+        "tier": "gold",
+        "opp": "OSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UTSA"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "TENN"
+      },
+      {
+        "type": "loss",
+        "opp": "OU"
+      },
+      {
+        "type": "loss",
+        "opp": "FLA"
+      }
+    ]
+  },
+  {
+    "rank": 20,
+    "team_id": "57",
+    "name": "Florida",
+    "location": "Florida",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FAU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CAM"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "AUB"
+      },
+      {
+        "type": "win",
+        "tier": "gold",
+        "opp": "MISS"
+      },
+      {
+        "type": "loss",
+        "opp": "MIZ"
+      },
+      {
+        "type": "loss",
+        "opp": "SC"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "TEX"
+      }
+    ]
+  },
+  {
+    "rank": 21,
+    "team_id": "68",
+    "name": "Boise St",
+    "location": "Boise State",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
+    "badges": [
+      {
+        "type": "loss",
+        "opp": "ORE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MEM"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SDAK"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WMU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "USU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FRES"
+      }
+    ]
+  },
+  {
+    "rank": 22,
+    "team_id": "142",
+    "name": "Missouri",
+    "location": "Missouri",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UAPB"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "KU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TROY"
+      },
+      {
+        "type": "loss",
+        "opp": "MSST"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "FLA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "TA&M"
+      },
+      {
+        "type": "loss",
+        "opp": "MISS"
+      }
+    ]
+  },
+  {
+    "rank": 23,
+    "team_id": "2567",
+    "name": "SMU",
+    "location": "SMU",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "FSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UCD"
+      },
+      {
+        "type": "loss",
+        "opp": "LOU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MOST"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "BC"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UVA"
+      }
+    ]
+  },
+  {
+    "rank": 24,
+    "team_id": "77",
+    "name": "Northwestern",
+    "location": "Northwestern",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SDST"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "COLO"
+      },
+      {
+        "type": "loss",
+        "opp": "IU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "BALL"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MSU"
+      }
+    ]
+  },
+  {
+    "rank": 25,
+    "team_id": "12",
+    "name": "Arizona",
+    "location": "Arizona",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NAU"
+      },
+      {
+        "type": "loss",
+        "opp": "BYU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NIU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "CIN"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WVU"
+      }
+    ]
+  },
+  {
+    "rank": 26,
+    "team_id": "197",
+    "name": "Oklahoma St",
+    "location": "Oklahoma State",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
+    "badges": [
+      {
+        "type": "loss",
+        "opp": "TLSA"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "ORE"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MUR"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WVU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "UCF"
+      },
+      {
+        "type": "loss",
+        "opp": "HOU"
+      }
+    ]
+  },
+  {
+    "rank": 27,
+    "team_id": "2483",
+    "name": "Oregon",
+    "location": "Oregon",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "BOIS"
+      },
+      {
+        "type": "loss",
+        "opp": "OKST"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "PRST"
+      },
+      {
+        "type": "win",
+        "tier": "silver",
+        "opp": "USC"
+      },
+      {
+        "type": "loss",
+        "opp": "UCLA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "NEB"
+      }
+    ]
+  },
+  {
+    "rank": 28,
+    "team_id": "2",
+    "name": "Auburn",
+    "location": "Auburn",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "BAY"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "USM"
+      },
+      {
+        "type": "loss",
+        "opp": "FLA"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "VAN"
+      },
+      {
+        "type": "loss",
+        "opp": "TENN"
+      },
+      {
+        "type": "win",
+        "tier": "gold",
+        "opp": "UGA"
+      }
+    ]
+  },
+  {
+    "rank": 29,
+    "team_id": "256",
+    "name": "James Madison",
+    "location": "James Madison",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "LIB"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "WAG"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SDSU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ODU"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MRSH"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "GASO"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "GAST"
+      }
+    ]
+  },
+  {
+    "rank": 30,
+    "team_id": "344",
+    "name": "Mississippi St",
+    "location": "Mississippi State",
+    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
+    "badges": [
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "ULM"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "MINN"
+      },
+      {
+        "type": "win",
+        "tier": "black",
+        "opp": "SC"
+      },
+      {
+        "type": "win",
+        "tier": "bronze",
+        "opp": "MIZ"
+      },
+      {
+        "type": "loss",
+        "opp": "ALA"
+      },
+      {
+        "type": "loss",
+        "opp": "LSU"
+      }
+    ]
+  }
+]
