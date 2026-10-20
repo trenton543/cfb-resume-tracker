@@ -26,13 +26,13 @@
     .team-name { font-weight: 600; font-size: 1rem; }
     
     .badges { display: flex; gap: 8px; align-items: center; }
-    .icon { font-size: 1.15rem; cursor: pointer; display: inline-block; font-weight: 400; line-height: 1; font-style: normal; }
+    .icon { font-size: 1.25rem; cursor: pointer; display: inline-block; font-weight: 700; line-height: 1; font-style: normal; }
     
-    /* Vibrant Tier Colors for Wins (★) & Losses (✕) */
-    .tier-gold { color: #ffd700 !important; }
-    .tier-silver { color: #c0c0c0 !important; }
-    .tier-bronze { color: #f97316 !important; } /* High contrast bronze/orange */
-    .tier-black { color: #475569 !important; }
+    /* High Contrast Tier Palette for Dark Mode */
+    .tier-gold { color: #ffd700 !important; filter: drop-shadow(0 0 4px rgba(255,215,0,0.8)); }
+    .tier-silver { color: #38bdf8 !important; filter: drop-shadow(0 0 3px rgba(56,189,248,0.7)); } /* Bright Sky Blue for Top 11-20 */
+    .tier-bronze { color: #fb923c !important; filter: drop-shadow(0 0 3px rgba(251,146,60,0.7)); } /* Bright Amber Orange for Top 21-30 */
+    .tier-black { color: #334155 !important; opacity: 0.6; } /* Dark Slate for Outside Top 30 */
   </style>
 </head>
 <body>
@@ -43,9 +43,9 @@
     <div class="legend">
       <div class="legend-title">Wins (★) & Losses (✕) by Opponent Tier</div>
       <div class="legend-row">
-        <div class="legend-item"><span class="icon tier-gold">★</span> / <span class="icon tier-gold">✕</span> Top 10</div>
-        <div class="legend-item"><span class="icon tier-silver">★</span> / <span class="icon tier-silver">✕</span> Top 11–20</div>
-        <div class="legend-item"><span class="icon tier-bronze">★</span> / <span class="icon tier-bronze">✕</span> Top 21–30</div>
+        <div class="legend-item"><span class="icon tier-gold">★</span> / <span class="icon tier-gold">✕</span> Top 10 (Gold)</div>
+        <div class="legend-item"><span class="icon tier-silver">★</span> / <span class="icon tier-silver">✕</span> Top 11–20 (Cyan)</div>
+        <div class="legend-item"><span class="icon tier-bronze">★</span> / <span class="icon tier-bronze">✕</span> Top 21–30 (Bronze)</div>
         <div class="legend-item"><span class="icon tier-black">★</span> / <span class="icon tier-black">✕</span> Outside Top 30</div>
       </div>
     </div>
@@ -71,11 +71,14 @@
             return `<span class="icon tier-${b.tier}" title="${label} vs ${b.opp}">${symbol}</span>`;
           }).join('');
 
+          // Clean up team name: use team.name directly without repeating location
+          const displayName = team.name || `${team.location || ''} ${team.nickname || ''}`.trim();
+
           card.innerHTML = `
             <div class="team-info">
               <span class="rank">${team.rank}</span>
-              <img class="logo" src="${team.logo}" alt="${team.name}">
-              <span class="team-name">${team.name}</span>
+              <img class="logo" src="${team.logo}" alt="${displayName}">
+              <span class="team-name">${displayName}</span>
             </div>
             <div class="badges">${badgeHTML}</div>
           `;
