@@ -8,32 +8,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "STAN"
+        "opp": "STAN",
+        "score": " (45\u20136)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "FAMU"
+        "opp": "FAMU",
+        "score": " (77\u20137)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "WAKE"
+        "opp": "WAKE",
+        "score": " (33\u201320)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CMU"
+        "opp": "CMU",
+        "score": " (52\u20133)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CLEM"
+        "opp": "CLEM",
+        "score": " (41\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "FSU"
+        "opp": "FSU",
+        "score": " (43\u201335)"
       }
     ]
   },
@@ -46,32 +52,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "UTU"
+        "opp": "UTU",
+        "score": " (63\u20137)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "ARIZ"
+        "opp": "ARIZ",
+        "score": " (28\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CSU"
+        "opp": "CSU",
+        "score": " (41\u201323)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "TCU"
+        "opp": "TCU",
+        "score": " (17\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ISU"
+        "opp": "ISU",
+        "score": " (24\u201310)"
       },
       {
         "type": "win",
         "tier": "gold",
-        "opp": "ND"
+        "opp": "ND",
+        "score": " (28\u201324)"
       }
     ]
   },
@@ -84,37 +96,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "BALL"
+        "opp": "BALL",
+        "score": " (56\u20133)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "TEX"
+        "opp": "TEX",
+        "score": " (23\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "KENT"
+        "opp": "KENT",
+        "score": " (59\u20133)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ILL"
+        "opp": "ILL",
+        "score": " (42\u201319)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "IOWA"
+        "opp": "IOWA",
+        "score": " (31\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MD"
+        "opp": "MD",
+        "score": " (45\u201316)"
       },
       {
         "type": "win",
         "tier": "gold",
-        "opp": "IU"
+        "opp": "IU",
+        "score": " (19\u201315)"
       }
     ]
   },
@@ -127,37 +146,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "WIS"
+        "opp": "WIS",
+        "score": " (41\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "RICE"
+        "opp": "RICE",
+        "score": " (52\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MSU"
+        "opp": "MSU",
+        "score": " (27\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PUR"
+        "opp": "PUR",
+        "score": " (49\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UNC"
+        "opp": "UNC",
+        "score": " (37\u201326)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "STAN"
+        "opp": "STAN",
+        "score": " (58\u20137)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "BYU"
+        "opp": "BYU",
+        "score": " (24\u201328)"
       }
     ]
   },
@@ -170,37 +196,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "TNST"
+        "opp": "TNST",
+        "score": " (63\u20133)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WKU"
+        "opp": "WKU",
+        "score": " (70\u201320)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ARK"
+        "opp": "ARK",
+        "score": " (45\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "OU"
+        "opp": "OU",
+        "score": " (41\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "VAN"
+        "opp": "VAN",
+        "score": " (38\u201314)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "ALA"
+        "opp": "ALA",
+        "score": " (20\u201317)"
       },
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "AUB"
+        "opp": "AUB",
+        "score": " (24\u201327)"
       }
     ]
   },
@@ -213,37 +246,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "UNT"
+        "opp": "UNT",
+        "score": " (52\u201316)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "HOW"
+        "opp": "HOW",
+        "score": " (55\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WKU"
+        "opp": "WKU",
+        "score": " (38\u20130)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "NU"
+        "opp": "NU",
+        "score": " (29\u201323)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "RUTG"
+        "opp": "RUTG",
+        "score": " (47\u201315)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "NEB"
+        "opp": "NEB",
+        "score": " (20\u201317)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "OSU"
+        "opp": "OSU",
+        "score": " (15\u201319)"
       }
     ]
   },
@@ -256,32 +296,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "LOU"
+        "opp": "LOU",
+        "score": " (41\u201338)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CLT"
+        "opp": "CLT",
+        "score": " (41\u20139)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "LSU"
+        "opp": "LSU",
+        "score": " (32\u201324)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "FLA"
+        "opp": "FLA",
+        "score": " (28\u201352)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "VAN"
+        "opp": "VAN",
+        "score": " (52\u201317)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "MIZ"
+        "opp": "MIZ",
+        "score": " (31\u20133)"
       }
     ]
   },
@@ -294,32 +340,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "ACU"
+        "opp": "ACU",
+        "score": " (33\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ORST"
+        "opp": "ORST",
+        "score": " (35\u201324)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "HOU"
+        "opp": "HOU",
+        "score": " (28\u201326)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SHSU"
+        "opp": "SHSU",
+        "score": " (49\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "COLO"
+        "opp": "COLO",
+        "score": " (29\u20137)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ASU"
+        "opp": "ASU",
+        "score": " (53\u201325)"
       }
     ]
   },
@@ -332,32 +384,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "CAL"
+        "opp": "CAL",
+        "score": " (45\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SDSU"
+        "opp": "SDSU",
+        "score": " (28\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PUR"
+        "opp": "PUR",
+        "score": " (52\u201338)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MD"
+        "opp": "MD",
+        "score": " (54\u20133)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "ORE"
+        "opp": "ORE",
+        "score": " (17\u201315)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WIS"
+        "opp": "WIS",
+        "score": " (17\u20137)"
       }
     ]
   },
@@ -370,32 +428,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "IDHO"
+        "opp": "IDHO",
+        "score": " (66\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ARK"
+        "opp": "ARK",
+        "score": " (43\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "USU"
+        "opp": "USU",
+        "score": " (33\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ISU"
+        "opp": "ISU",
+        "score": " (31\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "KU"
+        "opp": "KU",
+        "score": " (41\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "COLO"
+        "opp": "COLO",
+        "score": " (27\u201324)"
       }
     ]
   },
@@ -408,37 +472,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "FUR"
+        "opp": "FUR",
+        "score": " (56\u20139)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "GT"
+        "opp": "GT",
+        "score": " (45\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "KENN"
+        "opp": "KENN",
+        "score": " (42\u20139)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "TEX"
+        "opp": "TEX",
+        "score": " (17\u201320)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "AUB"
+        "opp": "AUB",
+        "score": " (24\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ARK"
+        "opp": "ARK",
+        "score": " (24\u201317)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "ALA"
+        "opp": "ALA",
+        "score": " (26\u201310)"
       }
     ]
   },
@@ -451,37 +522,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "YSU"
+        "opp": "YSU",
+        "score": " (45\u201313)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "ALA"
+        "opp": "ALA",
+        "score": " (17\u201345)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "TA&M"
+        "opp": "TA&M",
+        "score": " (31\u201321)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "USA"
+        "opp": "USA",
+        "score": " (45\u201321)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SC"
+        "opp": "SC",
+        "score": " (35\u201334)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "LSU"
+        "opp": "LSU",
+        "score": " (35\u201334)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "OU"
+        "opp": "OU",
+        "score": " (21\u201313)"
       }
     ]
   },
@@ -494,37 +572,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "ECU"
+        "opp": "ECU",
+        "score": " (48\u201310)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "UK"
+        "opp": "UK",
+        "score": " (45\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "FSU"
+        "opp": "FSU",
+        "score": " (50\u201336)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SC"
+        "opp": "SC",
+        "score": " (49\u201318)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "MSST"
+        "opp": "MSST",
+        "score": " (56\u201323)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "UGA"
+        "opp": "UGA",
+        "score": " (17\u201320)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "TENN"
+        "opp": "TENN",
+        "score": " (10\u201326)"
       }
     ]
   },
@@ -537,37 +622,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "ORST"
+        "opp": "ORST",
+        "score": " (33\u201320)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SOU"
+        "opp": "SOU",
+        "score": " (77\u20136)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "TTU"
+        "opp": "TTU",
+        "score": " (26\u201328)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "GASO"
+        "opp": "GASO",
+        "score": " (42\u201328)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UCF"
+        "opp": "UCF",
+        "score": " (27\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "KSU"
+        "opp": "KSU",
+        "score": " (35\u201316)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "OKST"
+        "opp": "OKST",
+        "score": " (35\u201332)"
       }
     ]
   },
@@ -580,32 +672,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "NIU"
+        "opp": "NIU",
+        "score": " (40\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ISU"
+        "opp": "ISU",
+        "score": " (16\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UNI"
+        "opp": "UNI",
+        "score": " (55\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MICH"
+        "opp": "MICH",
+        "score": " (20\u201319)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "OSU"
+        "opp": "OSU",
+        "score": " (14\u201331)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WASH"
+        "opp": "WASH",
+        "score": " (41\u201324)"
       }
     ]
   },
@@ -618,37 +716,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "SJSU"
+        "opp": "SJSU",
+        "score": " (42\u201326)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "FRES"
+        "opp": "FRES",
+        "score": " (39\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UL"
+        "opp": "UL",
+        "score": " (49\u201330)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "RUTG"
+        "opp": "RUTG",
+        "score": " (42\u201335)"
       },
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "ORE"
+        "opp": "ORE",
+        "score": " (27\u201341)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WASH"
+        "opp": "WASH",
+        "score": " (25\u201321)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PSU"
+        "opp": "PSU",
+        "score": " (31\u201323)"
       }
     ]
   },
@@ -661,37 +766,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "AKR"
+        "opp": "AKR",
+        "score": " (38\u201316)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PUR"
+        "opp": "PUR",
+        "score": " (38\u201336)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "MIA"
+        "opp": "MIA",
+        "score": " (20\u201333)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "LOU"
+        "opp": "LOU",
+        "score": " (30\u201327)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "STAN"
+        "opp": "STAN",
+        "score": " (57\u20133)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "NCSU"
+        "opp": "NCSU",
+        "score": " (38\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CAL"
+        "opp": "CAL",
+        "score": " (41\u20137)"
       }
     ]
   },
@@ -704,37 +816,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "CLEM"
+        "opp": "CLEM",
+        "score": " (51\u201310)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "LT"
+        "opp": "LT",
+        "score": " (45\u201314)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "MISS"
+        "opp": "MISS",
+        "score": " (24\u201332)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "TA&M"
+        "opp": "TA&M",
+        "score": " (35\u20136)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MCN"
+        "opp": "MCN",
+        "score": " (63\u201314)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "UK"
+        "opp": "UK",
+        "score": " (34\u201335)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "MSST"
+        "opp": "MSST",
+        "score": " (31\u20130)"
       }
     ]
   },
@@ -747,32 +866,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "TXST"
+        "opp": "TXST",
+        "score": " (59\u20137)"
       },
       {
         "type": "win",
         "tier": "gold",
-        "opp": "OSU"
+        "opp": "OSU",
+        "score": " (24\u201323)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UTSA"
+        "opp": "UTSA",
+        "score": " (30\u20136)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "TENN"
+        "opp": "TENN",
+        "score": " (20\u201317)"
       },
       {
         "type": "loss",
         "tier": "black",
-        "opp": "OU"
+        "opp": "OU",
+        "score": " (24\u201327)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "FLA"
+        "opp": "FLA",
+        "score": " (24\u201327)"
       }
     ]
   },
@@ -785,37 +910,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "FAU"
+        "opp": "FAU",
+        "score": " (66\u201321)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CAM"
+        "opp": "CAM",
+        "score": " (52\u20133)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "AUB"
+        "opp": "AUB",
+        "score": " (44\u201339)"
       },
       {
         "type": "win",
         "tier": "gold",
-        "opp": "MISS"
+        "opp": "MISS",
+        "score": " (52\u201328)"
       },
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "MIZ"
+        "opp": "MIZ",
+        "score": " (17\u201345)"
       },
       {
         "type": "loss",
         "tier": "black",
-        "opp": "SC"
+        "opp": "SC",
+        "score": " (19\u201338)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "TEX"
+        "opp": "TEX",
+        "score": " (27\u201324)"
       }
     ]
   },
@@ -828,32 +960,38 @@
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "ORE"
+        "opp": "ORE",
+        "score": " (27\u201334)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MEM"
+        "opp": "MEM",
+        "score": " (38\u201320)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SDAK"
+        "opp": "SDAK",
+        "score": " (38\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WMU"
+        "opp": "WMU",
+        "score": " (32\u20137)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "USU"
+        "opp": "USU",
+        "score": " (37\u201318)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "FRES"
+        "opp": "FRES",
+        "score": " (38\u201331)"
       }
     ]
   },
@@ -866,37 +1004,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "UAPB"
+        "opp": "UAPB",
+        "score": " (54\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "KU"
+        "opp": "KU",
+        "score": " (38\u201321)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "TROY"
+        "opp": "TROY",
+        "score": " (27\u201317)"
       },
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "MSST"
+        "opp": "MSST",
+        "score": " (24\u201331)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "FLA"
+        "opp": "FLA",
+        "score": " (45\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "TA&M"
+        "opp": "TA&M",
+        "score": " (27\u20136)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "MISS"
+        "opp": "MISS",
+        "score": " (3\u201331)"
       }
     ]
   },
@@ -909,32 +1054,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "FSU"
+        "opp": "FSU",
+        "score": " (27\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UCD"
+        "opp": "UCD",
+        "score": " (56\u201310)"
       },
       {
         "type": "loss",
         "tier": "black",
-        "opp": "LOU"
+        "opp": "LOU",
+        "score": " (31\u201341)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MOST"
+        "opp": "MOST",
+        "score": " (34\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "BC"
+        "opp": "BC",
+        "score": " (25\u201316)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UVA"
+        "opp": "UVA",
+        "score": " (23\u201313)"
       }
     ]
   },
@@ -947,32 +1098,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "SDST"
+        "opp": "SDST",
+        "score": " (34\u201318)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "COLO"
+        "opp": "COLO",
+        "score": " (41\u20137)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "IU"
+        "opp": "IU",
+        "score": " (23\u201329)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PSU"
+        "opp": "PSU",
+        "score": " (34\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "BALL"
+        "opp": "BALL",
+        "score": " (45\u201314)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MSU"
+        "opp": "MSU",
+        "score": " (24\u201321)"
       }
     ]
   },
@@ -985,32 +1142,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "NAU"
+        "opp": "NAU",
+        "score": " (35\u20137)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "BYU"
+        "opp": "BYU",
+        "score": " (17\u201328)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "NIU"
+        "opp": "NIU",
+        "score": " (42\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WSU"
+        "opp": "WSU",
+        "score": " (34\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "CIN"
+        "opp": "CIN",
+        "score": " (34\u20137)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WVU"
+        "opp": "WVU",
+        "score": " (52\u201331)"
       }
     ]
   },
@@ -1023,32 +1186,38 @@
       {
         "type": "loss",
         "tier": "black",
-        "opp": "TLSA"
+        "opp": "TLSA",
+        "score": " (10\u201324)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "ORE"
+        "opp": "ORE",
+        "score": " (39\u201331)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MUR"
+        "opp": "MUR",
+        "score": " (59\u20130)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WVU"
+        "opp": "WVU",
+        "score": " (41\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "UCF"
+        "opp": "UCF",
+        "score": " (42\u201328)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "HOU"
+        "opp": "HOU",
+        "score": " (32\u201335)"
       }
     ]
   },
@@ -1061,32 +1230,38 @@
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "BOIS"
+        "opp": "BOIS",
+        "score": " (34\u201327)"
       },
       {
         "type": "loss",
         "tier": "bronze",
-        "opp": "OKST"
+        "opp": "OKST",
+        "score": " (31\u201339)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "PRST"
+        "opp": "PRST",
+        "score": " (84\u20130)"
       },
       {
         "type": "win",
         "tier": "silver",
-        "opp": "USC"
+        "opp": "USC",
+        "score": " (41\u201327)"
       },
       {
         "type": "loss",
         "tier": "gold",
-        "opp": "UCLA"
+        "opp": "UCLA",
+        "score": " (15\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "NEB"
+        "opp": "NEB",
+        "score": " (17\u201314)"
       }
     ]
   },
@@ -1099,32 +1274,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "BAY"
+        "opp": "BAY",
+        "score": " (17\u201316)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "USM"
+        "opp": "USM",
+        "score": " (43\u20138)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "FLA"
+        "opp": "FLA",
+        "score": " (39\u201344)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "VAN"
+        "opp": "VAN",
+        "score": " (21\u201315)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "TENN"
+        "opp": "TENN",
+        "score": " (14\u201324)"
       },
       {
         "type": "win",
         "tier": "gold",
-        "opp": "UGA"
+        "opp": "UGA",
+        "score": " (27\u201324)"
       }
     ]
   },
@@ -1137,37 +1318,44 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "LIB"
+        "opp": "LIB",
+        "score": " (20\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "WAG"
+        "opp": "WAG",
+        "score": " (87\u20133)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SDSU"
+        "opp": "SDSU",
+        "score": " (26\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "ODU"
+        "opp": "ODU",
+        "score": " (46\u201320)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MRSH"
+        "opp": "MRSH",
+        "score": " (45\u201317)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "GASO"
+        "opp": "GASO",
+        "score": " (27\u201324)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "GAST"
+        "opp": "GAST",
+        "score": " (49\u201322)"
       }
     ]
   },
@@ -1180,32 +1368,38 @@
       {
         "type": "win",
         "tier": "black",
-        "opp": "ULM"
+        "opp": "ULM",
+        "score": " (62\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "MINN"
+        "opp": "MINN",
+        "score": " (38\u201313)"
       },
       {
         "type": "win",
         "tier": "black",
-        "opp": "SC"
+        "opp": "SC",
+        "score": " (41\u201334)"
       },
       {
         "type": "win",
         "tier": "bronze",
-        "opp": "MIZ"
+        "opp": "MIZ",
+        "score": " (31\u201324)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "ALA"
+        "opp": "ALA",
+        "score": " (23\u201356)"
       },
       {
         "type": "loss",
         "tier": "silver",
-        "opp": "LSU"
+        "opp": "LSU",
+        "score": " (0\u201331)"
       }
     ]
   }
