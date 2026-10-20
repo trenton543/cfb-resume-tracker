@@ -54,6 +54,23 @@
   </div>
 
   <script>
+    // Helper function to deduplicate repeated names (e.g., "Miami Miami" -> "Miami")
+    function removeDuplicateWords(str) {
+      if (!str) return '';
+      const words = str.split(' ');
+      const half = Math.floor(words.length / 2);
+      
+      // Check if second half of words identical to first half
+      if (words.length % 2 === 0) {
+        const firstHalf = words.slice(0, half).join(' ');
+        const secondHalf = words.slice(half).join(' ');
+        if (firstHalf === secondHalf) return firstHalf;
+      }
+      
+      // Fallback: Remove adjacent identical words
+      return words.filter((word, index) => word !== words[index - 1]).join(' ');
+    }
+
     async function loadDashboard() {
       try {
         const response = await fetch('data.json');
@@ -71,8 +88,9 @@
             return `<span class="icon tier-${b.tier}" title="${label} vs ${b.opp}">${symbol}</span>`;
           }).join('');
 
-          // Clean up team name: use team.name directly without repeating location
-          const displayName = team.name || `${team.location || ''} ${team.nickname || ''}`.trim();
+          // Clean duplicate words directly on render
+          const rawName = team.name || `${team.location || ''} ${team.nickname || ''}`.trim();
+          const displayName = removeDuplicateWords(rawName);
 
           card.innerHTML = `
             <div class="team-info">
