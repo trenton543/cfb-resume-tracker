@@ -17,25 +17,6 @@ def clean_team_name(team_data):
         return f"{location} {nickname}"
     return display_name or location or nickname or "Unknown Team"
 
-def get_team_conference(team_id):
-    if not team_id:
-        return 'Other'
-    url = f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/teams/{team_id}"
-    try:
-        res = requests.get(url).json()
-        conf_name = res.get('team', {}).get('standingSummary', '')
-        if 'SEC' in conf_name or 'Southeastern' in conf_name:
-            return 'SEC'
-        elif 'Big Ten' in conf_name:
-            return 'Big Ten'
-        elif 'Big 12' in conf_name:
-            return 'Big 12'
-        elif 'ACC' in conf_name or 'Atlantic Coast' in conf_name:
-            return 'ACC'
-    except Exception:
-        pass
-    return 'Other'
-
 def get_top_30_ap_poll():
     url = "https://site.api.espn.com/apis/site/v2/sports/football/college-football/rankings"
     res = requests.get(url).json()
@@ -51,27 +32,23 @@ def get_top_30_ap_poll():
         for rank_info in ap_poll.get('ranks', []):
             team_data = rank_info.get('team', {})
             rank_num = rank_info.get('current', rank_info.get('rank', len(teams) + 1))
-            team_id = str(team_data.get('id', ''))
             
             teams.append({
                 'rank': rank_num,
-                'team_id': team_id,
+                'team_id': str(team_data.get('id', '')),
                 'name': clean_team_name(team_data),
-                'logo': team_data.get('logo', ''),
-                'conference': get_team_conference(team_id)
+                'logo': team_data.get('logo', '')
             })
             
         others = ap_poll.get('others', [])
         others_sorted = sorted(others, key=lambda x: x.get('points', 0), reverse=True)
         for team_info in others_sorted[:5]:
             team_data = team_info.get('team', {})
-            team_id = str(team_data.get('id', ''))
             teams.append({
                 'rank': len(teams) + 1,
-                'team_id': team_id,
+                'team_id': str(team_data.get('id', '')),
                 'name': clean_team_name(team_data),
-                'logo': team_data.get('logo', ''),
-                'conference': get_team_conference(team_id)
+                'logo': team_data.get('logo', '')
             })
             
     return teams
@@ -111,7 +88,6 @@ def get_team_badges(team_id, rank_map):
         opp_rank = rank_map.get(opp_id, 99)
         opp_abbr = opponent.get('team', {}).get('abbreviation', 'OPP')
         
-        # Extract Scores Safely
         my_score = my_team.get('score', '')
         if isinstance(my_score, dict):
             my_score = my_score.get('displayValue', '')
