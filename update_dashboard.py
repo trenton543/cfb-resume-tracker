@@ -1,6 +1,24 @@
 import json
 import requests
 
+def clean_team_name(team_data):
+    # Safe deduplication for ESPN team names
+    location = team_data.get('location', '').strip()
+    nickname = team_data.get('nickname', '').strip()
+    display_name = team_data.get('displayName', '').strip()
+    short_name = team_data.get('shortDisplayName', '').strip()
+    
+    # Preferred order of clean names
+    if short_name and short_name != f"{location} {location}":
+        return short_name
+    elif location and nickname:
+        if location.lower() in nickname.lower():
+            return nickname
+        if nickname.lower() in location.lower():
+            return location
+        return f"{location} {nickname}"
+    return display_name or location or nickname or "Unknown Team"
+
 def get_top_30_ap_poll():
     url = "https://site.api.espn.com/apis/site/v2/sports/football/college-football/rankings"
     res = requests.get(url).json()
@@ -18,15 +36,10 @@ def get_top_30_ap_poll():
             team_data = rank_info.get('team', {})
             rank_num = rank_info.get('current', rank_info.get('rank', len(teams) + 1))
             
-            # Clean display name (prevents "Miami Miami" duplication)
-            location = team_data.get('location', '')
-            nickname = team_data.get('nickname', '')
-            full_name = team_data.get('displayName', f"{location} {nickname}".strip())
-            
             teams.append({
                 'rank': rank_num,
                 'team_id': str(team_data.get('id', '')),
-                'name': full_name,
+                'name': clean_team_name(team_data),
                 'logo': team_data.get('logo', '')
             })
             
@@ -35,14 +48,10 @@ def get_top_30_ap_poll():
         others_sorted = sorted(others, key=lambda x: x.get('points', 0), reverse=True)
         for team_info in others_sorted[:5]:
             team_data = team_info.get('team', {})
-            location = team_data.get('location', '')
-            nickname = team_data.get('nickname', '')
-            full_name = team_data.get('displayName', f"{location} {nickname}".strip())
-            
             teams.append({
                 'rank': len(teams) + 1,
                 'team_id': str(team_data.get('id', '')),
-                'name': full_name,
+                'name': clean_team_name(team_data),
                 'logo': team_data.get('logo', '')
             })
             
