@@ -2,7 +2,7 @@
   {
     "rank": 1,
     "team_id": "2390",
-    "name": "Miami Miami",
+    "name": "Miami",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png",
     "badges": [
       {
@@ -40,7 +40,7 @@
   {
     "rank": 2,
     "team_id": "252",
-    "name": "BYU BYU",
+    "name": "BYU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
     "badges": [
       {
@@ -78,7 +78,7 @@
   {
     "rank": 3,
     "team_id": "194",
-    "name": "Ohio State Ohio State",
+    "name": "Ohio State",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
     "badges": [
       {
@@ -121,7 +121,7 @@
   {
     "rank": 4,
     "team_id": "87",
-    "name": "Notre Dame Notre Dame",
+    "name": "Notre Dame",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
     "badges": [
       {
@@ -164,7 +164,7 @@
   {
     "rank": 5,
     "team_id": "61",
-    "name": "Georgia Georgia",
+    "name": "Georgia",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
     "badges": [
       {
@@ -207,7 +207,7 @@
   {
     "rank": 6,
     "team_id": "84",
-    "name": "Indiana Indiana",
+    "name": "Indiana",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/84.png",
     "badges": [
       {
@@ -250,7 +250,7 @@
   {
     "rank": 7,
     "team_id": "145",
-    "name": "Ole Miss Ole Miss",
+    "name": "Ole Miss",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
     "badges": [
       {
@@ -288,7 +288,7 @@
   {
     "rank": 8,
     "team_id": "2641",
-    "name": "Texas Tech Texas Tech",
+    "name": "Texas Tech",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png",
     "badges": [
       {
@@ -326,7 +326,7 @@
   {
     "rank": 9,
     "team_id": "26",
-    "name": "UCLA UCLA",
+    "name": "UCLA",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png",
     "badges": [
       {
@@ -364,7 +364,7 @@
   {
     "rank": 10,
     "team_id": "254",
-    "name": "Utah Utah",
+    "name": "Utah",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/254.png",
     "badges": [
       {
@@ -402,7 +402,7 @@
   {
     "rank": 11,
     "team_id": "2633",
-    "name": "Tennessee Tennessee",
+    "name": "Tennessee",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png",
     "badges": [
       {
@@ -445,7 +445,7 @@
   {
     "rank": 12,
     "team_id": "96",
-    "name": "Kentucky Kentucky",
+    "name": "Kentucky",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png",
     "badges": [
       {
@@ -488,7 +488,7 @@
   {
     "rank": 13,
     "team_id": "333",
-    "name": "Alabama Alabama",
+    "name": "Alabama",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
     "badges": [
       {
@@ -531,7 +531,7 @@
   {
     "rank": 14,
     "team_id": "248",
-    "name": "Houston Houston",
+    "name": "Houston",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
     "badges": [
       {
@@ -574,7 +574,7 @@
   {
     "rank": 15,
     "team_id": "2294",
-    "name": "Iowa Iowa",
+    "name": "Iowa",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png",
     "badges": [
       {
@@ -612,7 +612,7 @@
   {
     "rank": 16,
     "team_id": "30",
-    "name": "USC USC",
+    "name": "USC",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png",
     "badges": [
       {
@@ -655,7 +655,7 @@
   {
     "rank": 17,
     "team_id": "154",
-    "name": "Wake Forest Wake Forest",
+    "name": "Wake Forest",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
     "badges": [
       {
@@ -698,7 +698,7 @@
   {
     "rank": 18,
     "team_id": "99",
-    "name": "LSU LSU",
+    "name": "LSU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
     "badges": [
       {
@@ -741,7 +741,7 @@
   {
     "rank": 19,
     "team_id": "251",
-    "name": "Texas Texas",
+    "name": "Texas",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png",
     "badges": [
       {
@@ -779,7 +779,7 @@
   {
     "rank": 20,
     "team_id": "57",
-    "name": "Florida Florida",
+    "name": "Florida",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
     "badges": [
       {
@@ -822,7 +822,7 @@
   {
     "rank": 21,
     "team_id": "68",
-    "name": "Boise State Boise St",
+    "name": "Boise State",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/68.png",
     "badges": [
       {
@@ -860,7 +860,7 @@
   {
     "rank": 22,
     "team_id": "142",
-    "name": "Missouri Missouri",
+    "name": "Missouri",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/142.png",
     "badges": [
       {
@@ -903,7 +903,7 @@
   {
     "rank": 23,
     "team_id": "2567",
-    "name": "SMU SMU",
+    "name": "SMU",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2567.png",
     "badges": [
       {
@@ -941,7 +941,7 @@
   {
     "rank": 24,
     "team_id": "77",
-    "name": "Northwestern Northwestern",
+    "name": "Northwestern",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
     "badges": [
       {
@@ -979,7 +979,7 @@
   {
     "rank": 25,
     "team_id": "12",
-    "name": "Arizona Arizona",
+    "name": "Arizona",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png",
     "badges": [
       {
@@ -1017,7 +1017,7 @@
   {
     "rank": 26,
     "team_id": "197",
-    "name": "Oklahoma State Oklahoma St",
+    "name": "Oklahoma State",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/197.png",
     "badges": [
       {
@@ -1055,7 +1055,7 @@
   {
     "rank": 27,
     "team_id": "2483",
-    "name": "Oregon Oregon",
+    "name": "Oregon",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png",
     "badges": [
       {
@@ -1093,7 +1093,7 @@
   {
     "rank": 28,
     "team_id": "2",
-    "name": "Auburn Auburn",
+    "name": "Auburn",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png",
     "badges": [
       {
@@ -1131,7 +1131,7 @@
   {
     "rank": 29,
     "team_id": "256",
-    "name": "James Madison James Madison",
+    "name": "James Madison",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
     "badges": [
       {
@@ -1174,7 +1174,7 @@
   {
     "rank": 30,
     "team_id": "344",
-    "name": "Mississippi State Mississippi St",
+    "name": "Mississippi State",
     "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
     "badges": [
       {
