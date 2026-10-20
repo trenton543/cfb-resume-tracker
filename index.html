@@ -83,6 +83,12 @@
   <script>
     let allTeamsData = [];
 
+    // Explicit Conference Mapping Arrays
+    const secTeams = ['georgia', 'alabama', 'ole miss', 'texas longhorns', 'tennessee', 'lsu', 'missouri', 'texas a&m', 'oklahoma', 'vanderbilt', 'florida', 'arkansas', 'kentucky', 'south carolina', 'auburn', 'mississippi state'];
+    const bigTenTeams = ['ohio state', 'oregon', 'penn state', 'indiana', 'illinois', 'michigan', 'usc', 'iowa', 'wisconsin', 'nebraska', 'washington', 'minnesota', 'michigan state', 'purdue', 'northwestern', 'rutgers', 'ucla', 'maryland'];
+    const big12Teams = ['byu', 'iowa state', 'kansas state', 'colorado', 'texas tech', 'utah', 'arizona state', 'west virginia', 'tcu', 'ucf', 'baylor', 'oklahoma state', 'kansas', 'arizona', 'cincinnati', 'houston'];
+    const accTeams = ['miami', 'clemson', 'smu', 'pittsburgh', 'louisville', 'virginia tech', 'duke', 'syracuse', 'georgia tech', 'nc state', 'california', 'stanford', 'boston college', 'wake forest', 'virginia', 'florida state', 'north carolina'];
+
     function removeDuplicateWords(str) {
       if (!str) return '';
       const words = str.split(' ');
@@ -95,6 +101,17 @@
       return words.filter((word, index) => word !== words[index - 1]).join(' ');
     }
 
+    function matchesConference(teamName, confList) {
+      const name = teamName.toLowerCase().trim();
+      return confList.some(item => {
+        // Strict boundary check so "texas" doesn't match "texas tech"
+        if (item === 'texas longhorns' || item === 'texas') {
+          return name === 'texas' || name === 'texas longhorns';
+        }
+        return name.includes(item);
+      });
+    }
+
     function renderDashboard(filterConf = 'all') {
       const container = document.getElementById('dashboard');
       container.innerHTML = '';
@@ -102,19 +119,20 @@
       const top25 = allTeamsData.slice(0, 25);
       const filteredTeams = top25.filter(team => {
         if (filterConf === 'all') return true;
+        const name = (team.name || '').toLowerCase();
         
-        // Exact conference matching from ESPN API data
-        if (team.conference) {
-          if (filterConf === 'Other') {
-            return !['SEC', 'Big Ten', 'Big 12', 'ACC'].includes(team.conference);
-          }
-          return team.conference === filterConf;
+        if (filterConf === 'SEC') return matchesConference(name, secTeams);
+        if (filterConf === 'Big Ten') return matchesConference(name, bigTenTeams);
+        if (filterConf === 'Big 12') return matchesConference(name, big12Teams);
+        if (filterConf === 'ACC') return matchesConference(name, accTeams);
+        
+        if (filterConf === 'Other') {
+          const isSEC = matchesConference(name, secTeams);
+          const isB10 = matchesConference(name, bigTenTeams);
+          const isB12 = matchesConference(name, big12Teams);
+          const isACC = matchesConference(name, accTeams);
+          return !isSEC && !isB10 && !isB12 && !isACC;
         }
-
-        // Backup fallback matching
-        const nameLower = (team.name || '').toLowerCase();
-        if (filterConf === 'Big 12') return nameLower.includes('texas tech') || nameLower.includes('byu');
-        if (filterConf === 'SEC') return nameLower === 'texas' || nameLower.includes('longhorns') || nameLower.includes('georgia') || nameLower.includes('alabama');
         return true;
       });
 
